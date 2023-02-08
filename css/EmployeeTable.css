@@ -1,0 +1,147 @@
+
+body 
+{
+    margin: 0%;
+    height: 100%;
+}
+
+.header 
+{
+    padding: 15px 0;
+    background-color: #ffffff;
+    padding-left: 260px;
+}
+
+.emp-text 
+{
+    font: normal  bold 20px Montserrat;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+}
+
+.emp-payroll 
+{ 
+    color: #373e46; 
+}
+
+.form-content {
+   
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 65%;
+    margin: 44px 60px;
+    padding: 44px 60px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    opacity: 1;
+}
+
+.form-head {
+    font: normal normal bold 24px/3px Roboto;
+    letter-spacing: 0px;
+    color: #281a24;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 40px;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.label {
+    min-width: 140px;
+}
+
+label {
+   padding: 12px 12px 12px 0;
+ 
+}
+.text{
+    font-size: 16px;
+    color: #42515f;
+    opacity: 1;
+    font-family: Roboto;
+}
+.input{
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    resize: vertical;   
+    border-bottom: 2px solid black;
+}
+
+
+.profile-radio-content 
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.profile-radio-content > label 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile 
+{
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: normal normal normal 16px Roboto;
+    color: #42515f;
+  }
+
+  .salary{
+    width: 260px;
+  }
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button {
+    border-radius: 4px;
+    background-color: #605858c2;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+
+  .submitButton {
+    border: none;
+    background-color: #605858c2;
+    margin-right: 30px;
+  }
+  
+  .cancelButton {
+    text-decoration: none;
+    text-align: center;
+  }
