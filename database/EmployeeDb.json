@@ -1,0 +1,24 @@
+{
+  "employeeDetails": [
+    {
+      "name": "Sourav",
+      "profile": "./assets/boy.png",
+      "gender": "male",
+      "department": "Engineer ",
+      "salary ": "200000",
+      "date": "12Oct2022",
+      "note": "Hii everyone.",
+      "id": 1
+    },
+    {
+      "name": "kumar",
+      "profile": "./assets/boy.png",
+      "gender": "male",
+      "department": "Engineer ",
+      "salary ": "200000",
+      "date": "12Oct2022",
+      "note": "Hii everyone.",
+      "id": 3
+    }
+  ]
+}
