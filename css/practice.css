@@ -1,0 +1,35 @@
+.MainContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 55px;
+    font-family:sans-serif;
+}
+.BoxContainer{
+    width: 90vw;
+    height: 80vh;
+    background-color: #a8d741;
+    color: rgb(38, 34, 34);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: black;
+    color: aliceblue;
+    width: 193px;
+    height: 61px;
+    border-radius: 35px;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 20px;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
+}

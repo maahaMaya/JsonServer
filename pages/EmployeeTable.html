@@ -1,199 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Payroll</title>
-    <link rel="stylesheet" href="../css/EmployeeTable.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Payroll</title>
+  <link rel="stylesheet" href="../css/EmployeeTable.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
+
 <body>
-    <div class="MainContainer">
-      <header class="header-content header">
-        <div>
-            <span class="emp-text">EMPLOYEE</span><br>
-            <span class="emp-text emp-payroll">PAYROLL</span>
-        </div>
+  <div class="MainContainer">
+    <header class="header-content header">
+      <div>
+        <span class="emp-text">EMPLOYEE</span><br>
+        <span class="emp-text emp-payroll">PAYROLL</span>
+      </div>
     </header>
-      <div class="tableConatiner">
-        <div class="MainHead">
-          <h4 style="font-weight: bold;">Employee details</h4>
-          <p><button style="width: auto; height: auto; background-color:  rgb(163, 255, 127); text-align: center;">+ Add User</button></p>
+    <div class="tableConatiner">
+      <div class="MainHead">
+        <h4 style="font-weight: bold;">Employee details</h4>
+        <div class="buttonSearch">
+          <div class="Searching">
+            <input type="text" ><i class="glyphicon glyphicon-search" id="pen"></i>
+          </div>
+          <div>
+            <button style="width: 130px; height: 34px; background-color:#82a60c; text-align: center; color: #fff;" ><a href="./AddEmployeeForm.html"><i class="glyphicon glyphicon-plus" ></i> Add User</a></button>
+          </div>
         </div>
-        <div class="TableHh">
-          <table class="table">
-              <thead style="color: aliceblue; background-color: black;">
-                <tr>
-                  <th scope="col">Name</th>
-                  <th scope="col">Gender</th>
-                  <th scope="col">DEPARTMENT</th>
-                  <th scope="col">SALARY</th>
-                  <th scope="col">START DATE</th>
-                  <th scope="col">ACTIONS</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Hari Om</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Sourav</th>
-                  <td>Male</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2022</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-                <tr>
-                  <th scope="row"><img class="profile" id="image1"  src="../assets/boy.png" alt="profile1">Kumar</th>
-                  <td>Female</td>
-                  <td><nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Sale </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> HR </nobr>  <nobr style="width: 100%; background-color: rgb(163, 255, 127); border-radius: 25%; text-align: center; margin-left: 4px;"> Finance </nobr></td>
-                  <td> &#8377; 10000</td>
-                  <td>29 Oct 2023</td>
-                  <td><i class="fa fa-trash"></i></td>
-                </tr>
-              </tbody>
-          </table>
       </div>
+      <div class="TableHh">
+        <table class="table">
+          <thead style="color: aliceblue; background-color: #415160;">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Gender</th>
+              <th scope="col">DEPARTMENT</th>
+              <th scope="col">SALARY</th>
+              <th scope="col">START DATE</th>
+              <th scope="col">ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row"><img class="profile" id="image1" src="../assets/boy.png" alt="profile1">Hari Om</th>
+              <td>Male</td>
+              <td>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Sale </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  HR </nobr>
+                <nobr
+                  style="width: 100%; background-color: #e5f3ac; border-radius: 25%; text-align: center; margin-left: 4px;">
+                  Finance </nobr>
+              </td>
+              <td> &#8377; 10000</td>
+              <td>29 Oct 2023</td>
+              <td><a href=""><i class="glyphicon glyphicon-trash"></i></a> &nbsp; &nbsp;<a href=""><i class="glyphicon glyphicon-pencil"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>   
+    </div>
+  </div>
 </body>
+
 </html>
