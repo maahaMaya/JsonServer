@@ -2,23 +2,23 @@
   "employeeDetails": [
     {
       "name": "Sourav",
-      "profile": "./assets/boy.png",
-      "gender": "male",
+      "profile": "../assests/profileImages/empThree.png",
+      "gender": "Male",
       "department": "Engineer ",
-      "salary ": "200000",
+      "salary": "200000",
       "date": "12Oct2022",
       "note": "Hii everyone.",
       "id": 1
     },
     {
-      "name": "kumar",
-      "profile": "./assets/boy.png",
-      "gender": "male",
-      "department": "Engineer ",
-      "salary ": "200000",
-      "date": "12Oct2022",
+      "name": "Hari Ram",
+      "profile": "../assests/profileImages/empTwo.png",
+      "gender": "Male",
+      "department": "Hr ",
+      "salary": "200000",
+      "date": "12March2023",
       "note": "Hii everyone.",
-      "id": 3
+      "id": 2
     }
   ]
 }
