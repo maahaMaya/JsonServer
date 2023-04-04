@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/EmployeeForm.css">
+    <title>EmpForm</title>
+</head>
+
+<body>
+    <div id="FormMainContainer">
+        <header class="header-content header">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </header>
+        <div id="FormConatiner">
+            <div style="width: 60%; height: 90%; background-color: #FFFFFF; ">
+                <div style="display: flex; flex-direction: column; margin-left: 10%; margin-top: 3%; gap: 2.5vw;">
+                    <div style="font-size: 28px; font-weight: bold; color: #42515F;">
+                        Employee Payroll Form
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1vw;">
+                        <div style="display: flex; gap: 10%;  align-items: baseline;">
+                            <label for="name">Name</label>
+                            <div><input type="text" id="name" name="name" value="" style="width: 36vw; height: 4vh; border: 1px solid #BDBDBD;"></div>
+                        </div>
+                        <div style="display: flex; gap: 2%; ">
+                            <label for="imagePath" style="margin-top: 1vw;">Profile image</label>
+                            <div>
+                                  <input type="radio" id="profileImg1" name="empLogo"  style="margin-bottom: 1vw;"
+                                    value="../assests/profileImages/empOne.png">
+                                <img src="../assests/profileImages/empOne.png" 
+                                    alt="profileImg1" for="profileImg1">
+                                  <input type="radio" id="profileImg2" name="empLogo" style="margin-bottom: 1vw;"
+                                    value="../assests/profileImages/empOne.png">
+                                <img src="../assests/profileImages/EMpTwo.png" 
+                                    alt="profileImg2" for="profileImg2">
+                                  <input type="radio" id="profileImg3" name="empLogo" style="margin-bottom: 1vw;"
+                                    value="../assests/profileImages/empOne.png">
+                                <img src="../assests/profileImages/empThree.png"
+                                    alt="profileImg3" for="profileImg3">
+                                  <input type="radio" id="profileImg4" name="empLogo" style="margin-bottom: 1vw;"
+                                    value="../assests/profileImages/empOne.png">
+                                <img src="../assests/profileImages/empFour.png"
+                                    alt="profileImg4" for="profileImg4">
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 7.5%;  align-items: baseline;">
+                            <label for="gender">Gender</label>
+                            <div>
+                                  <input type="radio" id="male" name="gender" value="Male">
+                                <label for="male">Male</label>
+                                  <input type="radio" id="female" name="gender" value="Female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 3.5%;  align-items: baseline;">
+                            <label for="department">Department</label>
+                            <div>
+                                  <input type="radio" id="Hr" name="department" value="Hr">
+                                <label for="male">Hr</label>
+                                  <input type="radio" id="Sales" name="department" value="Sales">
+                                <label for="female">Sales</label>
+                                  <input type="radio" id="Finance" name="department" value="Finance">
+                                <label for="Finance">Finance</label>
+                                  <input type="radio" id="Engineer" name="department" value="Engineer">
+                                <label for="Engineer">Engineer</label>
+                                  <input type="radio" id="Other" name="department" value="Other">
+                                <label for="Other">Other</label>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10%;  align-items: baseline;">
+                            <label for="Salary">Salary</label>
+                            <select name="Salary" id="Salary" style="width: 15vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                <option value="">Salary</option>
+                                <option value="4212003">4212003</option>
+                                <option value="6212003">6212003</option>
+                                <option value="7212003">7212003</option>
+                                <option value="8212003">8212003</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; gap: 6.8%;  align-items: baseline;">
+                            <label for="StartDate">Start Date</label>
+                            <div>
+                                <select name="Day" id="Day" style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                    <option value="">Day</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                                <select name="Month" id="Month" style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                    <option value="volvo">Month</option>
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="April">Apil</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="Aug">Aug</option>
+                                    <option value="Sep">Sep</option>
+                                    <option value="Oct">Oct</option>
+                                    <option value="Nov">Nov</option>
+                                    <option value="Dec">Dec</option>
+                                </select>
+                                <select name="Year" id="Year" style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                    <option value="">Year</option>
+                                    <option value="2000">2000</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2003">2003</option>
+                                    <option value="2004">2004</option>
+                                    <option value="2005">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 11%;  align-items: baseline;">
+                        <label for="Notes">Notes</label>
+                        <textarea id="textAreaNote" name="textAreaNote" rows="4" cols="50" style="width: 36vw; height: 12vh; border: 1px solid #BDBDBD;"></textarea>
+                    </div>
+                    <div style="display: flex; gap: 28%;  align-items: baseline;">
+                        <div>
+                            <button>Cancel</button>
+                        </div>
+                        <div>
+                            <button>Submit</button>
+                            <button>Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
