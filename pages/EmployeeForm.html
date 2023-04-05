@@ -10,18 +10,53 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="../javaScript/EmployeeForm.js"></script>
     <script>
+
+        //add new employee api 
         $(document).ready(function () {
             $("#SubmitData").click(function () {
-                console.log("Handler for .click() called.");
+                var name = document.getElementById("name").value;
+                var profile = $('input[name="empLogo"]:checked').val();
+                var gender = $('input[name="gender"]:checked').val();
+                var department = $('input[name="department"]:checked').val();
+                var salary = $('select[name="Salary"]').val();
+                var day = $('select[name="Day"]').val();
+                var month = $('select[name="Month"]').val();;
+                var year = $('select[name="Year"]').val();
+                var date = day + " " + month + " " + year;
+                var note = document.getElementById("name").value;
+
+                const addNewEmpData = {
+                    "name": name,
+                    "profile": profile,
+                    "gender": gender,
+                    "department": department,
+                    "salary": salary,
+                    "date": date,
+                    "note": note
+                }
+
+                $.ajax({
+
+                    type: 'POST',
+                    url: 'http://localhost:3000/employeeDetails/',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(addNewEmpData),
+                    processData: false,
+
+                    success: function (res) {
+                        console.log(res)
+                        window.location.href = "./EmployeeTable.html"
+                    },
+
+                    error: function (err) {
+                        console.log(err)
+                    }
+                });
             });
         })
-        // $(document).ready(function () {
-//     $("#deleteIcon").click(function () {
-//         var a = document.getElementById("name").value;
-//         var b = $('input[name="empLogo"]:checked').val();
-//         console.log("Handler for .click() calledssssss.", b , a);
-//     });
-// })
+
+
     </script>
 </head>
 
@@ -52,13 +87,13 @@
                                     value="../assests/profileImages/empOne.png">
                                 <img src="../assests/profileImages/empOne.png" alt="profileImg1" for="profileImg1">
                                   <input type="radio" id="profileImg2" name="empLogo" style="margin-bottom: 1vw;"
-                                    value="../assests/profileImages/empOne.png">
+                                    value="../assests/profileImages/EMpTwo.png">
                                 <img src="../assests/profileImages/EMpTwo.png" alt="profileImg2" for="profileImg2">
                                   <input type="radio" id="profileImg3" name="empLogo" style="margin-bottom: 1vw;"
-                                    value="../assests/profileImages/empOne.png">
+                                    value="../assests/profileImages/empThree.png">
                                 <img src="../assests/profileImages/empThree.png" alt="profileImg3" for="profileImg3">
                                   <input type="radio" id="profileImg4" name="empLogo" style="margin-bottom: 1vw;"
-                                    value="../assests/profileImages/empOne.png">
+                                    value="../assests/profileImages/empFour.png">
                                 <img src="../assests/profileImages/empFour.png" alt="profileImg4" for="profileImg4">
                             </div>
                         </div>
@@ -136,7 +171,7 @@
                                 </select>
                                 <select name="Month" id="Month"
                                     style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
-                                    <option value="volvo">Month</option>
+                                    <option value="">Month</option>
                                     <option value="Jan">Jan</option>
                                     <option value="Feb">Feb</option>
                                     <option value="Mar">Mar</option>

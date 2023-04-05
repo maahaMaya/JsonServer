@@ -6,9 +6,29 @@
       "gender": "Male",
       "department": "Engineer ",
       "salary": "200000",
-      "date": "12Oct2022",
+      "date": "12 Oct 2022",
       "note": "Hii everyone.",
       "id": 1
+    },
+    {
+      "name": "Shiv",
+      "profile": "../assests/profileImages/empThree.png",
+      "gender": "Male",
+      "department": "Engineer",
+      "salary": "8212003",
+      "date": "5 Feb 2010",
+      "note": "Shiv",
+      "id": 2
+    },
+    {
+      "name": "ram",
+      "profile": "../assests/profileImages/empFour.png",
+      "gender": "Male",
+      "department": "Hr",
+      "salary": "7212003",
+      "date": " Nov 2008",
+      "note": "ram",
+      "id": 3
     }
   ]
 }
