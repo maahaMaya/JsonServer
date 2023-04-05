@@ -9,16 +9,6 @@
       "date": "12Oct2022",
       "note": "Hii everyone.",
       "id": 1
-    },
-    {
-      "name": "Hari Ram",
-      "profile": "../assests/profileImages/empTwo.png",
-      "gender": "Male",
-      "department": "Hr ",
-      "salary": "200000",
-      "date": "12March2023",
-      "note": "Hii everyone.",
-      "id": 2
     }
   ]
 }

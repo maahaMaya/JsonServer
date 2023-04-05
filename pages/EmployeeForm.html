@@ -7,6 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/EmployeeForm.css">
     <title>EmpForm</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="../javaScript/EmployeeForm.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#SubmitData").click(function () {
+                console.log("Handler for .click() called.");
+            });
+        })
+        // $(document).ready(function () {
+//     $("#deleteIcon").click(function () {
+//         var a = document.getElementById("name").value;
+//         var b = $('input[name="empLogo"]:checked').val();
+//         console.log("Handler for .click() calledssssss.", b , a);
+//     });
+// })
+    </script>
 </head>
 
 <body>
@@ -26,27 +42,24 @@
                     <div style="display: flex; flex-direction: column; gap: 1vw;">
                         <div style="display: flex; gap: 10%;  align-items: baseline;">
                             <label for="name">Name</label>
-                            <div><input type="text" id="name" name="name" value="" style="width: 36vw; height: 4vh; border: 1px solid #BDBDBD;"></div>
+                            <div><input type="text" id="name" name="name" value=""
+                                    style="width: 36vw; height: 4vh; border: 1px solid #BDBDBD;"></div>
                         </div>
                         <div style="display: flex; gap: 2%; ">
                             <label for="imagePath" style="margin-top: 1vw;">Profile image</label>
                             <div>
-                                  <input type="radio" id="profileImg1" name="empLogo"  style="margin-bottom: 1vw;"
+                                  <input type="radio" id="profileImg1" name="empLogo" style="margin-bottom: 1vw;"
                                     value="../assests/profileImages/empOne.png">
-                                <img src="../assests/profileImages/empOne.png" 
-                                    alt="profileImg1" for="profileImg1">
+                                <img src="../assests/profileImages/empOne.png" alt="profileImg1" for="profileImg1">
                                   <input type="radio" id="profileImg2" name="empLogo" style="margin-bottom: 1vw;"
                                     value="../assests/profileImages/empOne.png">
-                                <img src="../assests/profileImages/EMpTwo.png" 
-                                    alt="profileImg2" for="profileImg2">
+                                <img src="../assests/profileImages/EMpTwo.png" alt="profileImg2" for="profileImg2">
                                   <input type="radio" id="profileImg3" name="empLogo" style="margin-bottom: 1vw;"
                                     value="../assests/profileImages/empOne.png">
-                                <img src="../assests/profileImages/empThree.png"
-                                    alt="profileImg3" for="profileImg3">
+                                <img src="../assests/profileImages/empThree.png" alt="profileImg3" for="profileImg3">
                                   <input type="radio" id="profileImg4" name="empLogo" style="margin-bottom: 1vw;"
                                     value="../assests/profileImages/empOne.png">
-                                <img src="../assests/profileImages/empFour.png"
-                                    alt="profileImg4" for="profileImg4">
+                                <img src="../assests/profileImages/empFour.png" alt="profileImg4" for="profileImg4">
                             </div>
                         </div>
                         <div style="display: flex; gap: 7.5%;  align-items: baseline;">
@@ -75,7 +88,8 @@
                         </div>
                         <div style="display: flex; gap: 10%;  align-items: baseline;">
                             <label for="Salary">Salary</label>
-                            <select name="Salary" id="Salary" style="width: 15vw; height: 4vh; border: 1px solid #BDBDBD;">
+                            <select name="Salary" id="Salary"
+                                style="width: 15vw; height: 4vh; border: 1px solid #BDBDBD;">
                                 <option value="">Salary</option>
                                 <option value="4212003">4212003</option>
                                 <option value="6212003">6212003</option>
@@ -120,7 +134,8 @@
                                     <option value="30">30</option>
                                     <option value="31">31</option>
                                 </select>
-                                <select name="Month" id="Month" style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                <select name="Month" id="Month"
+                                    style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
                                     <option value="volvo">Month</option>
                                     <option value="Jan">Jan</option>
                                     <option value="Feb">Feb</option>
@@ -135,7 +150,8 @@
                                     <option value="Nov">Nov</option>
                                     <option value="Dec">Dec</option>
                                 </select>
-                                <select name="Year" id="Year" style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
+                                <select name="Year" id="Year"
+                                    style="width: 7vw; height: 4vh; border: 1px solid #BDBDBD;">
                                     <option value="">Year</option>
                                     <option value="2000">2000</option>
                                     <option value="2001">2001</option>
@@ -154,14 +170,15 @@
                     </div>
                     <div style="display: flex; gap: 11%;  align-items: baseline;">
                         <label for="Notes">Notes</label>
-                        <textarea id="textAreaNote" name="textAreaNote" rows="4" cols="50" style="width: 36vw; height: 12vh; border: 1px solid #BDBDBD;"></textarea>
+                        <textarea id="textAreaNote" name="textAreaNote" rows="4" cols="50"
+                            style="width: 36vw; height: 12vh; border: 1px solid #BDBDBD;"></textarea>
                     </div>
                     <div style="display: flex; gap: 28%;  align-items: baseline;">
                         <div>
                             <button>Cancel</button>
                         </div>
                         <div>
-                            <button>Submit</button>
+                            <button id="SubmitData">Submit</button>
                             <button>Reset</button>
                         </div>
                     </div>
